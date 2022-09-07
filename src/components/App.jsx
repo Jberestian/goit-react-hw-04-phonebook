@@ -25,8 +25,6 @@ const App = () => {
   }, [contacts]);
 
   const addContact = items => {
-    console.log('addContact');
-
     if (isDublicate(items)) {
       return alert(
         `${items.name}: ${items.number} contact already in your list`
